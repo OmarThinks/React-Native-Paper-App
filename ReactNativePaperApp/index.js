@@ -19,7 +19,7 @@ import { name as appName } from './app.json';
 import App from './App';
 
 
-
+/*
 const theme = {
     ...DefaultTheme,
     colors: {
@@ -28,7 +28,17 @@ const theme = {
       accent: 'yellow',
     },
   };
+*/
 
+const theme = {
+  ...DefaultTheme,
+  roundness: 2,
+  colors: {
+    ...DefaultTheme.colors,
+    primary: '#3498db',
+    accent: '#f1c40f',
+  },
+};
 
 export default function Main() {
   return (

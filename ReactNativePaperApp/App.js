@@ -26,6 +26,10 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+
+import { Button } from 'react-native-paper';
+import { useTheme  } from 'react-native-paper';
+
 const Section = ({children, title}): Node => {
   const isDarkMode = useColorScheme() === 'dark';
   return (
@@ -51,7 +55,7 @@ const Section = ({children, title}): Node => {
     </View>
   );
 };
-
+/*
 const App: () => Node = () => {
   const isDarkMode = useColorScheme() === 'dark';
 
@@ -87,6 +91,21 @@ const App: () => Node = () => {
         </View>
       </ScrollView>
     </SafeAreaView>
+  );
+};
+
+*/
+const App: () => Node = () => {
+  const isDarkMode = useColorScheme() === 'dark';
+
+  const backgroundStyle = {
+    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
+  };
+  const theme = useTheme();
+  return (
+      <Button icon="wifi">
+        Press m
+      </Button>
   );
 };
 
