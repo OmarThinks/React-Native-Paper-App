@@ -13,7 +13,7 @@ AppRegistry.registerComponent(appName, () => App);
 
 import * as React from 'react';
 import { AppRegistry } from 'react-native';
-import { DefaultTheme, Provider as PaperProvider } from 'react-native-paper';
+import { DefaultTheme, Provider as PaperProvider, DarkTheme } from 'react-native-paper';
 
 import { name as appName } from './app.json';
 import App from './App';
@@ -31,14 +31,14 @@ const theme = {
 */
 
 const theme = {
-  ...DefaultTheme,
-  roundness: 10,
-  colors: {
-    ...DefaultTheme.colors,
-    primary: '#3498db',
-    accent: '#f1c40f',
-  },
+  ...DarkTheme,
 };
+
+console.log(DefaultTheme);
+console.log(DarkTheme);
+
+
+console.log(theme);
 
 export default function Main() {
   return (

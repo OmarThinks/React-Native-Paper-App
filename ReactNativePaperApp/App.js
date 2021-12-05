@@ -8,13 +8,13 @@
 
 import React from 'react';
 import {SafeAreaView} from 'react-native';
-import { useTheme, Button  } from 'react-native-paper';
+import { useTheme, Button,  } from 'react-native-paper';
 
 const App= () => {
-  const theme = useTheme();
+  const theme= useTheme();
   return (
-    <SafeAreaView style={{backgroundColor:"blue", height:"100%"}}>
-      <Button icon="camera" theme={theme} style={{backgroundColor:"red"}} title="Hey">
+    <SafeAreaView>
+      <Button icon="camera" theme={theme}  title="Hey" >
         Press meeeeeeeeeeee
       </Button>
     </SafeAreaView>
