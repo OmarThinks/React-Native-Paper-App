@@ -32,7 +32,7 @@ const theme = {
 
 const theme = {
   ...DefaultTheme,
-  roundness: 2,
+  roundness: 10,
   colors: {
     ...DefaultTheme.colors,
     primary: '#3498db',
