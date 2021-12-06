@@ -7,16 +7,27 @@
  */
 
 import React from 'react';
-import {SafeAreaView} from 'react-native';
-import { useTheme, Button,  } from 'react-native-paper';
+import {SafeAreaView, View} from 'react-native';
+import { useTheme, Button, ActivityIndicator, Colors} from 'react-native-paper';
+
+
+
+
+const MyComponent = () => (
+  <ActivityIndicator animating={true} color={Colors.redA700} />
+);
+
 
 const App= () => {
   const theme= useTheme();
   return (
     <SafeAreaView>
-      <Button icon="camera" theme={theme}  title="Hey" >
-        Press meeeeeeeeeeee
-      </Button>
+      <View >
+        <Button icon="creative-commons"  title="Hey" mode='outlined'>
+          Press meeeeeeeeeeee
+        </Button>
+      </View>
+        <MyComponent />
     </SafeAreaView>
   );
 };
